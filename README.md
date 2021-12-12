@@ -1,5 +1,5 @@
 # Mime header
-[![Go (tests and linters)](https://github.com/Jake-Convictional/mimeheader/actions/workflows/go.yml/badge.svg)](https://github.com/Jake-Convictional/mimeheader/actions/workflows/go.yml) ![GitHub](https://img.shields.io/github/license/Jake-Convictional/mimeheader) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Jake-Convictional/mimeheader/Go) ![GitHub issues](https://img.shields.io/github/issues/Jake-Convictional/mimeheader) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Jake-Convictional/mimeheader)
+[![Go (tests and linters)](https://github.com/Jake-Convictional/mimeheaderTMP/actions/workflows/go.yml/badge.svg)](https://github.com/Jake-Convictional/mimeheaderTMP/actions/workflows/go.yml) ![GitHub](https://img.shields.io/github/license/Jake-Convictional/mimeheaderTMP) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Jake-Convictional/mimeheaderTMP/Go) ![GitHub issues](https://img.shields.io/github/issues/Jake-Convictional/mimeheaderTMP) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Jake-Convictional/mimeheaderTMP)
 
 ## RFC reference
 Implementation of mime types and [Accept header support (RFC 2616 Sec 14.1)](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1).
@@ -21,7 +21,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Jake-Convictional/mimeheader"
+	"github.com/Jake-Convictional/mimeheaderTMP"
 )
 
 // Content-Type - application/json;q=0.9;p=2
@@ -44,7 +44,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/Jake-Convictional/mimeheader"
+	"github.com/Jake-Convictional/mimeheaderTMP"
 )
 
 // Accept - application/json;q=1.0,*/*;q=1.0; param=wild,image/png;q=1.0;param=test
@@ -65,7 +65,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/Jake-Convictional/mimeheader"
+	"github.com/Jake-Convictional/mimeheaderTMP"
 )
 
 func main() {
@@ -176,7 +176,7 @@ Accept: text/plain; q=1,application/xml; q=1;
 $ go test -bench=.
 goos: darwin
 goarch: arm64
-pkg: github.com/Jake-Convictional/mimeheader
+pkg: github.com/Jake-Convictional/mimeheaderTMP
 BenchmarkParseAcceptHeaderLong-8                        	  595474	      1979 ns/op	    1672 B/op	      16 allocs/op
 BenchmarkParseAcceptHeaderThreeWithWights-8             	  879034	      1364 ns/op	    1480 B/op	      14 allocs/op
 BenchmarkParseAcceptHeaderOne-8                         	 4268950	       279.7 ns/op	     232 B/op	       7 allocs/op
@@ -184,7 +184,7 @@ BenchmarkParseAcceptHeaderAndCompareLong-8              	  295642	      4052 ns/
 BenchmarkParseAcceptHeaderAndCompareThreeWithWights-8   	  408138	      2943 ns/op	    1992 B/op	      28 allocs/op
 BenchmarkParseAcceptHeaderAndCompareOne-8               	 1399750	       856.0 ns/op	     411 B/op	      13 allocs/op
 PASS
-ok  	github.com/Jake-Convictional/mimeheader	9.252s
+ok  	github.com/Jake-Convictional/mimeheaderTMP	9.252s
 ```
 
 ## Contributing

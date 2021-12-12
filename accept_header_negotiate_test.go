@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/Jake-Convictional/mimeheader"
+	mimeheader "github.com/Jake-Convictional/mimeheaderTMP"
 )
 
 func ExampleAcceptHeader_Negotiate() {
